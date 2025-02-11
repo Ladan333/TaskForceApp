@@ -19,7 +19,11 @@
     </div>
     <div>
         <?php
-            echo $_POST["newTask"];
+            $tasks = ["one", "two", "three"];
+
+            foreach ($tasks as $t){
+                echo "$t <br>";
+            }
         ?>
     </div>
 </body>
