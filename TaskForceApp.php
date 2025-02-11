@@ -24,6 +24,10 @@
             foreach ($tasks as $t){
                 echo "$t <br>";
             }
+
+            $myFile = fopen("tasks.txt", "r");
+            echo fread($myFile,filesize("tasks.txt"));
+            fclose($myFile);
         ?>
     </div>
 </body>
